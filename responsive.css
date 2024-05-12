@@ -1,0 +1,114 @@
+@media screen and (max-width : 1200px){
+    
+}
+@media screen and (max-width : 1024px){
+    
+}
+@media screen and (max-width : 989px){
+    .discount-section .main-col .flex-col .btn a {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .arrival-section .main-col .flex-col .btn a {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .footer-section .main-col {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 30px;
+    }
+    .footer-section .main-col .flex-col .img {
+        padding-top: 20px;
+    }
+    .footer-section .main-col .flex-col hr {
+        opacity: .2;
+        margin-bottom: 10px;
+    }
+    .footer-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (max-width : 800px){
+    .catagori-section .main-col {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+    .crazy-deals-section .main-col .flex-col h4 {
+        font-size: 22px;
+    }
+    .catagori-section {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .arrival-section .main-col {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+    .account-section .main-col {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+}
+@media screen and (max-width : 767px){
+    .discount-section .main-col {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+    .footer-section .main-col {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+    .footer-section .main-col .flex-col .img img {
+        width: 100%;
+    }
+}
+@media screen and (max-width : 640px){
+    .crazy-deals-section .main-col {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    .catagori-section .main-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width : 520px){
+    .winter-header-section .serch-box {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .winter-header-section .serch-box .search-page {
+        text-align: center;
+    }
+    .account-section .main-col .flex-col {
+        padding: 0px;
+    }
+}
+@media screen and (max-width : 480px){
+    .crazy-deals-section .main-col {
+        grid-template-columns: 1fr;
+    }
+    .crazy-deals-section .main-col .flex-col a img {
+        border-radius: 50%;
+        width: auto;
+    }
+    .discount-section .main-col {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+    .arrival-section .main-col {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+    .arrival-section{
+        padding-bottom: 40px;
+    }
+    .footer-section .main-col {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .footer-section .main-col .flex-col h2 {
+        padding-bottom: 10px;
+    }
+}

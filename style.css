@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.header-section .main-col{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-align: center;
+}
+
+.header-section .main-col .logo{
+    text-align: left;
+}
+.header-section .main-col .logo h2 a{
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.header-section .main-col .left-col{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
+}
+.header-section .main-col .left-col{
+    text-align: right;
+}
+
+.header-section .main-col .left-col .my-account{
+    text-align: right;
+}
+.header-section .main-col .left-col .my-account a{
+    text-decoration: none;
+    font-size: 18px;
+    color: gray;
+}
+
+.header-section .main-col .serach-box{
+    text-align: right;
+     position: relative;
+}
+
+.header-section .main-col .serach-box input{
+    padding: 15px 40px;
+    outline: none;
+    background: #dcdcdc;
+    color: gray;
+    font-size: 16px;
+}
+.header-section .main-col .serach-box i{
+    position: absolute;
+    left: 15px;
+    top: 35%;
+    font-size: 18px;
+    color: gray;
+}
+
+/* header section end */
+.menubar-section{
+    border-bottom: 1px solid gray;
+}
+.menubar-section .main-col{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    text-align: center;
+    column-gap: 30px;
+}
+.menubar-section .main-col .left-col{
+    text-align: left;
+}
+.menubar-section .main-col .left-col li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.menubar-section .main-col .left-col li a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+.menubar-section .main-col .left-col li i{
+    padding-left: 10px;
+    height: 20px;
+}
+.menubar-section .main-col .right-col{
+    text-align: right;
+}
+.menubar-section .main-col .left-col .men_nain{
+    position: relative;
+}
+.menubar-section .main-col .left-col .men_nain:hover .el-side-menu{
+   display: block;
+}
+
+.menubar-section .main-col .left-col .el-main{
+    position: relative;
+}
+.menubar-section .main-col .left-col .el-main:hover .el-side-menu{
+    display: block;
+}
+.menubar-section .main-col .left-col .el-side-menu{
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    bottom: -96px;
+    font-size: 10px;
+    color: gray;
+    width: 200px;
+    background: #dcdcdc;
+    display: none;
+    transition: .4s;
+}
+.menubar-section .main-col .left-col .el-side-menu li{
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+.menubar-section .main-col .left-col .el-side-menu li:hover{
+    background: #000;
+}
+.menubar-section .main-col .left-col .el-side-menu li a{
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menubar-section .main-col .left-col .el-side-menu li:hover{
+    background: #dcdcdc;
+}
+.menubar-section .main-col .left-col .book_main{
+    position: relative;
+}
+.menubar-section .main-col .left-col .book_main:hover .el-side-menu{
+    display: block;
+}
+.menubar-section .main-col .left-col .grocerice_main{
+    position: relative;
+}
+.menubar-section .main-col .left-col .grocerice_main:hover .el-side-menu{
+    display: block;
+}
+.menubar-section .main-col .right-col li{
+    display: inline-block;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.menubar-section .main-col .right-col a{
+    text-decoration: none;
+    color: #000;
+}
+.menubar-section .main-col .right-col li .fa-basket-shopping{
+    margin-left: 150px;
+}
+.menubar-section .main-col .right-col span{
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+}
+.menubar-section .main-col .right-col i{
+    font-size: 16px;
+}
+.menubar-section .main-col .right-col .el-main{
+    position: relative;
+}
+.menubar-section .main-col .right-col .el-main:hover .el-side-menu{
+    display: block;
+}
+.menubar-section .main-col .right-col .el-side-menu{
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    bottom: -47px;
+    font-size: 14px;
+    color: gray;
+    width: 250px;
+    background: #dcdcdc;
+    display: none;
+    transition: .4s;
+    text-align: left;
+}
+.menubar-section .main-col .right-col .el-side-menu li{
+    padding: 15px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+/* menubar section end */
+
+.banner-section img{
+    width: 100%;
+    height: 300px;
+}
+.banner-section .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: #d01426;
+}
+.banner-section .owl-theme .owl-dots .owl-dot span {
+	width: 25px;
+	height: 10px;
+	background: #171515;
+}
+.banner-section .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+	background: 0 0;
+	color: inherit;
+	border: none;
+	padding: 0 !important;
+	font: inherit;
+	font-size: 40px;
+	color: red;
+}
+/* banner section end */
+
+.crazy-deals-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.crazy-deals-section .header h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 40px;
+}
+.crazy-deals-section .main-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    column-gap: 40px;
+}
+.crazy-deals-section .main-col .flex-col a img{
+    border-radius:50%;
+    width: 100%;
+}
+.crazy-deals-section .main-col .flex-col h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+    margin-top: 15px;
+}
+/* carazy deals section end */
+
+.catagori-section{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.catagori-section .header h2{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 40px;
+}
+.catagori-section .main-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
+}
+.catagori-section .main-col .flex-col a{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: gray;
+}
+.catagori-section .main-col .flex-col a img{
+    width: 100%;
+}
+.catagori-section .main-col .flex-col h4{
+    margin-top: 20px;
+}
+/* catagori-section end */
+
+
+.discount-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.discount-section .header h2{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 40px;
+}
+.discount-section .main-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    align-items: center;
+    text-align: center;
+    column-gap: 40px;
+}
+.discount-section .main-col .flex-col .img img{
+    width: 100%;
+}
+.discount-section .main-col .flex-col .content h2 a{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+}
+.discount-section .main-col .flex-col .content h2{
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.discount-section .main-col .flex-col .content button{
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #000;
+    color: gray;
+    cursor: pointer;
+}
+.discount-section .main-col .flex-col .content p a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+}
+.discount-section .main-col .flex-col .content p span{
+   padding-right: 20px;
+   position: relative;
+}
+.discount-section .main-col .flex-col .content p span::after{
+    content: '';
+    position: absolute;
+    top: 48%;
+    left: 0;
+    width: 61px;
+    height: 1px;
+    background: gray;
+
+}
+.discount-section .main-col .flex-col .content{
+    margin-bottom: 20px;
+}
+.discount-section .main-col .flex-col .content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.discount-section .main-col .flex-col .btn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: gray;
+    background: #dcdcdc;
+    transition: .4s;
+    text-transform: capitalize;
+}
+.discount-section .main-col .flex-col .btn a:hover{
+    background: #000;
+    color: #fff;
+}
+/* discount section end */
+
+.arrival-section{
+    padding-bottom: 60px;
+}
+.arrival-section .header h2{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 40px;
+}
+.arrival-section .main-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    align-items: center;
+    text-align: center;
+    column-gap: 40px;
+}
+.arrival-section .main-col .flex-col a{
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+}
+.arrival-section .main-col .flex-col .content h2 a{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+}
+.arrival-section  .main-col .flex-col .img img{
+    width: 100%;
+}
+.arrival-section  .main-col .flex-col .content h2{
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.arrival-section .main-col .flex-col .content button{
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #000;
+    color: gray;
+    cursor: pointer;
+}
+.arrival-section  .main-col .flex-col .content p a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+}
+.arrival-section .main-col .flex-col .content p span{
+   padding-right: 20px;
+   position: relative;
+}
+.arrival-section  .main-col .flex-col .content p span::after{
+    content: '';
+    position: absolute;
+    top: 48%;
+    left: 0;
+    width: 61px;
+    height: 1px;
+    background: gray;
+
+}
+.arrival-section  .main-col .flex-col .content{
+    margin-bottom: 20px;
+}
+.arrival-section  .main-col .flex-col .content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.arrival-section  .main-col .flex-col .btn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: gray;
+    background: #dcdcdc;
+    transition: .4s;
+    text-transform: capitalize;
+}
+.arrival-section  .main-col .flex-col .btn a:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* arrial section end */
+
+.footer-section{
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background: #dcdcdc;
+}
+.footer-section .main-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+.footer-section .main-col .flex-col h2{
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: gray;
+}
+.footer-section .main-col .flex-col hr{
+    opacity: .2;
+    margin-bottom: 40px;
+}
+.footer-section .main-col .flex-col li{
+    list-style: none;
+    line-height: 30px;
+}
+.footer-section .main-col .flex-col .content li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footer-section .main-col .flex-col .content li a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.footer-section .main-col .flex-col .icon li{
+    display:  inline-block;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.footer-section .main-col .flex-col .img{
+    padding-top: 123px;
+} 
+.footer-section .main-col .flex-col .payment-img{
+    background: transparent;
+}
+.footer-section .main-col .flex-col .img img{
+    border-radius: 10px;
+}
+.footer-lower-section{
+    background: #dcdcdc;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+.footer-lower-section .container p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+.footer-lower-section .container a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+/* footer section end */
+
+/* winter sale section start */
+.winter-header-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.winter-header-section .header a{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+}
+.winter-header-section .header i{
+    font-size: 14px;
+}
+.winter-header-section .header .fa-house{
+    margin-right: 5px;
+}
+.winter-header-section .header .fa-angle-right{
+    margin-left: 5px;
+}
+.winter-header-section .header p{
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+}
+.winter-header-section .header-contnet{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.winter-header-section .header-contnet h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: gray;
+    text-transform: capitalize;
+}
+.winter-header-section .serch-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    column-gap: 40px;
+}
+.winter-header-section .serch-box .select-box{
+    text-align: left;
+}
+.winter-header-section .serch-box .select-box select{
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #000;
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.winter-header-section .serch-box .select-box p{
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    margin-left: 10px;
+}
+.winter-header-section .serch-box .search-page{
+    text-align: right;
+}
+.winter-header-section .serch-box .search-page li{
+    list-style: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #dcdcdc;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.winter-header-section .serch-box .search-page li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+/* winter sale section end */
+
+/* my account section start */
+.account-section .main-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    column-gap: 40px;
+}
+.account-section .main-col .flex-col{
+    text-align: left;
+}
+.account-section .main-col .flex-col h2{
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 20px;
+}
+.account-section .main-col .flex-col label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 10px;
+}
+.account-section .main-col .flex-col{
+    padding: 20px;
+}
+.account-section .main-col .flex-col input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    background: #dcdcdc;
+    border: 2px solid #dcdcdc;
+    border-radius: 5px;
+}
+.account-section .main-col .flex-col .password{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.account-section .main-col .flex-col .login-btn a{
+    text-decoration: none;
+    padding: 12px 20px;
+    background: #dcdcdc;
+    font-size: 16px;
+    color: gray;
+    border-radius: 5px;
+    transition: .4s;
+}
+.account-section .main-col .flex-col .login-btn a:hover{
+    background: #000;
+    color: #fff;
+}
+.account-section .main-col .flex-col .login-btn{
+    margin-bottom: 40px;
+}
+.account-section .main-col .flex-col .check_box{
+    padding-bottom: 20px;
+}
+.account-section .main-col .flex-col .check_box input{
+    text-align: left;
+    width: 20px;
+    display: inline-block;
+}
+.account-section .main-col .flex-col .check_box p{
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+}
+.account-section .main-col .flex-col .password-2{
+    margin-bottom: 30px;
+}
+.account-section .main-col .flex-col .password-2 a:hover{
+    text-decoration: none;
+    color: gray;
+}
+.account-section .main-col .flex-col .lost-password a:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+/* my account section end */
+
+/*cart design start */
+
+/*cart design end */
